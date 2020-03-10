@@ -8,9 +8,26 @@ export default class Estudiante extends Persona{
         this._escuela = escuela
     }
 
+    getNumerocuenta(){
+        return this._numeroCuenta
+    }
+
     getPerfil(){
         return `${this._numeroCuenta} ${this._nombre.getCompleto()}`
     }
+
+    getNombre(){
+        return 
+    }
+
+    esIgualA(estudiante){
+        if(estudiante.getNumerocuenta() === this._numeroCuenta){
+        return true
+    }
+    return false
+    }
+
+
     print() {
         console.log(this.getPerfil())
         console.log(this._numeroCuenta)
